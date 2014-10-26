@@ -1,0 +1,83 @@
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: black;
+}
+
+.left {
+  position: static;
+  width: 240px;
+  height: 500px;
+  margin: 50px 0 0 50px;
+}
+
+.logo {
+  margin: 0 0 40px 0;
+}
+
+.caption {
+  margin: 0 0 25 0;
+}
+
+.pagelist {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  word-spacing: 11px;
+  color:  white;
+  position:  relative;
+  margin: 25 0 25 0;
+}
+
+.pagelist td {
+  padding: 10px 5px 3px 0;
+}
+
+.mysite {
+  margin: 0 0 0 -2px;
+}
+
+.content{
+  position: absolute;
+  width:  950px;
+  display: block;
+  overflow: hidden;
+  top:  30px;
+  left: 380px;
+}
+
+figure{
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity;
+}
+.show{
+  opacity: 1;
+  position: static;
+  transition: 1s opacity;
+}
+
+.next{
+  position: absolute;
+  top: 300px;
+  right: 50;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left:10px solid white;
+}
+
+.prev{
+  position: absolute;
+  top: 300px;
+  left:  0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid white;
+}
+
+.next:hover, .prev:hover{
+  cursor: pointer;
+}

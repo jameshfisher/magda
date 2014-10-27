@@ -55,26 +55,22 @@ figure{
   transition: 1s opacity;
 }
 
-.next{
+.prev, .next {
   position: absolute;
   top: 300px;
-  right: 50;
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left:10px solid white;
+
+}
+.next{
+  right: 50;
 }
 
 .prev{
-  position: absolute;
-  top: 300px;
   left:  0;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right:10px solid white;
 }
 
 .next:hover, .prev:hover{

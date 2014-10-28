@@ -39,7 +39,7 @@ div.content{
   display: block;
   top:  0px;
   right: 0px;
-  margin: 50px;
+  margin: 50px 0;
 }
 
 div.content div.images {

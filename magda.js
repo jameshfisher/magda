@@ -1,7 +1,7 @@
 (function() {
 
   var counter = 0,
-    $items = document .querySelectorAll('.content figure'),
+    $items = document .querySelectorAll('.content img'),
     numItems = $items.length;
 
   for (var i = 0; i < numItems; i++) {

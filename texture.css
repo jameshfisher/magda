@@ -15,12 +15,12 @@ body {
   padding: 5px;
 }
 
-div.content div.images figure img {
+div.content div.images img {
   opacity: 0;
   transition: 1s opacity;
 }
 
-div.content div.images figure.show img {
+div.content div.images img.show {
   opacity: 1;
   transition: 1s opacity;
 }

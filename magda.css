@@ -33,9 +33,9 @@ body {
   margin: 0 0 0 -2px;
 }
 
-.content{
+div.content{
   position: absolute;
-  width:  820px;
+  width:  920px;
   display: block;
   overflow: hidden;
   top:  0px;
@@ -43,19 +43,25 @@ body {
   margin: 50px;
 }
 
-figure{
+div.content div.images {
   position: absolute;
-  opacity: 0;
-  transition: 1s opacity;
+  left: 50px;
+}
+
+div.content div.images figure {
   margin: 0;
 }
-.show{
+
+div.content div.images figure img {
+  opacity: 0;
+  transition: 1s opacity;
+}
+div.content div.images figure.show img {
   opacity: 1;
-  position: static;
   transition: 1s opacity;
 }
 
-.prev, .next {
+div.content .prev, div.content .next {
   position: absolute;
   top: 300px;
   width: 0;
@@ -65,14 +71,14 @@ figure{
   border-left:10px solid white;
 
 }
-.next{
+div.content .next{
   right: 0;
 }
 
-.prev{
+div.content .prev{
   left:  0;
 }
 
-.next:hover, .prev:hover{
+div.content .next:hover, div.content .prev:hover{
   cursor: pointer;
 }

@@ -1,0 +1,50 @@
+.left {
+  width: 240px;
+  height: 500px;
+  margin: 50px 0 0 50px;
+}
+
+.logo {
+  margin: 0 0 40px 0;
+}
+
+.caption {
+  margin: 0 0 25px 0;
+}
+
+.mysite {
+  margin: 0 0 0 -2px;
+}
+
+div.content{
+  position: absolute;
+  width:  920px;
+  display: block;
+  top:  0px;
+  right: 0px;
+  margin: 50px 0;
+}
+
+div.content div.images {
+  position: absolute;
+  left: 50px;
+}
+
+div.content div.images figure {
+  position: absolute;
+  margin: 0;
+}
+
+div.content .prev, div.content .next {
+  position: absolute;
+  top: 300px;
+  width: 0;
+  height: 0;
+}
+div.content .next{
+  right: 20px;
+}
+
+div.content .prev{
+  left:  20px;
+}

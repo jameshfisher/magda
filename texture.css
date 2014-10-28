@@ -2,20 +2,6 @@ body {
   background-color: black;
 }
 
-.left {
-  width: 240px;
-  height: 500px;
-  margin: 50px 0 0 50px;
-}
-
-.logo {
-  margin: 0 0 40px 0;
-}
-
-.caption {
-  margin: 0 0 25px 0;
-}
-
 .pagelist {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 9px;
@@ -29,53 +15,25 @@ body {
   padding: 5px;
 }
 
-.mysite {
-  margin: 0 0 0 -2px;
-}
-
-div.content{
-  position: absolute;
-  width:  920px;
-  display: block;
-  top:  0px;
-  right: 0px;
-  margin: 50px 0;
-}
-
-div.content div.images {
-  position: absolute;
-  left: 50px;
-}
-
-div.content div.images figure {
-  position: absolute;
-  margin: 0;
-}
-
 div.content div.images figure img {
   opacity: 0;
   transition: 1s opacity;
 }
+
 div.content div.images figure.show img {
   opacity: 1;
   transition: 1s opacity;
 }
 
 div.content .prev, div.content .next {
-  position: absolute;
-  top: 300px;
-  width: 0;
-  height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
 div.content .next{
-  right: 20px;
   border-left:10px solid white;
 }
 
 div.content .prev{
-  left:  20px;
   border-right:10px solid white;
 }
 

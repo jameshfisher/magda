@@ -1,8 +1,12 @@
 (function() {
 
   var counter = 0,
-    $items = document.querySelectorAll('.content figure'),
+    $items = document .querySelectorAll('.content figure'),
     numItems = $items.length;
+
+  for (var i = 0; i < numItems; i++) {
+    $(".pagelist").append($("<span>").text(i+1));
+  }
 
   var showCurrent = function() {
     var itemToShow = Math.abs(counter % numItems);

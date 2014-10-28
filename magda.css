@@ -48,6 +48,7 @@ div.content div.images {
 }
 
 div.content div.images figure {
+  position: absolute;
   margin: 0;
 }
 

@@ -13,7 +13,7 @@ body {
 }
 
 .caption {
-  margin: 0 0 25 0;
+  margin: 0 0 25px 0;
 }
 
 .pagelist {
@@ -22,7 +22,7 @@ body {
   word-spacing: 11px;
   color:  white;
   position:  relative;
-  margin: 25 0 25 0;
+  margin: 25px 0 25px 0;
 }
 
 .pagelist span {

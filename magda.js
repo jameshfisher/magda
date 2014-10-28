@@ -1,31 +1,37 @@
-(function() {
+(function($) {
+  $(document).ready(function () {
 
-  var counter = 0,
-    $items = document .querySelectorAll('.content img'),
-    numItems = $items.length;
+    var currentPageIndex = 0;
+    var $items = document.querySelectorAll('.content img');
+    var numItems = $items.length;
 
-  for (var i = 0; i < numItems; i++) {
-    $(".pagelist").append($("<span>").text(i+1));
-  }
+    var goToPageIndex = function(i) {
+      currentPageIndex = i;
 
-  var showCurrent = function() {
-    var itemToShow = Math.abs(counter % numItems);
+      var itemToShow = Math.abs(currentPageIndex % numItems);
 
-    [].forEach.call($items, function(el) {
-      el.classList.remove('show');
-    });
+      [].forEach.call($items, function(el) {
+        el.classList.remove('show');
+      });
 
-    $items[itemToShow].classList.add('show');
-  };
+      $items[itemToShow].classList.add('show');
+    };
 
-  document.querySelector('.next').addEventListener('click', function() {
-    counter++;
-    showCurrent();
-  }, false);
+    for (var i = 0; i < numItems; i++) {
+      $(".pagelist").append(
+        $("<a>").text(i+1).attr("href", "#").on("click", function() {
+          goToPageIndex(parseInt($(this).text())-1);
+          return false;
+        }));
+    }
 
-  document.querySelector('.prev').addEventListener('click', function() {
-    counter--;
-    showCurrent();
-  }, false);
+    document.querySelector('.next').addEventListener('click', function() {
+      goToPageIndex(currentPageIndex+1);
+    }, false);
 
-})();
+    document.querySelector('.prev').addEventListener('click', function() {
+      goToPageIndex(currentPageIndex+1);
+    }, false);
+
+  });
+})(jQuery);

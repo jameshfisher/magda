@@ -11,8 +11,13 @@ body {
   margin: 25px 0 25px 0;
 }
 
-.pagelist span {
+.pagelist a {
   padding: 5px;
+}
+
+.pagelist a:link, .pagelist a:hover, .pagelist a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 div.content div.images img {

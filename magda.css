@@ -68,15 +68,15 @@ div.content .prev, div.content .next {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left:10px solid white;
-
 }
 div.content .next{
   right: 0;
+  border-left:10px solid white;
 }
 
 div.content .prev{
   left:  0;
+  border-right:10px solid white;
 }
 
 div.content .next:hover, div.content .prev:hover{
